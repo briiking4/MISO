@@ -1,8 +1,32 @@
 body {
-  background-color: #000000;
+  background-color: #131313;
+  color:white;
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
 
+}
+
+.text-resp-1{
+  font-size:1.5vw;
+}
+
+.text-resp-2{
+  font-size:2vw;
+}
+
+.text-resp-4{
+  font-size:4vw;
+}
+
+.text-gold{
+  color:#d5a95a;
+}
+.text-light-gray{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-dark-red{
+  background-color: #8a0304;
 }
 
 .navbar {
@@ -17,14 +41,14 @@ body {
     display: block;
 }
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: red;
+  color: #ed1a24;
 }
 
 .navbar-dark .navbar-nav .show > .nav-link,
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: red;
+  color: #ed1a24;
 }
 
 
@@ -32,7 +56,7 @@ body {
   width:90%;
   background: none repeat scroll 0 0 #0B0D0C;
   padding:10px;
-  margin-top:25px;
+  margin-top:35px;
 
 }
 .carousel-item{
@@ -45,14 +69,46 @@ body {
   background-size: cover;
 }
 
+.carousel-caption{
+  right:5%;
+  left:5%;
+}
+.caption-top{
+  top:30px;
+}
+
 .carousel-indicators{
   bottom:-105px;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+
+@media(max-width:576px){
+  .carousel-item{
+    height:52vh !important;
+  }
+  .volume{
+    display: none;
+  }
+}
+
+@media(max-width:768px){
+  .carousel-item{
+    height:60vh !important;
+  }
+  .volume{
+    margin-top:30% !important;
+  }
+}
+
+.carousel-bg{
+  min-height: 100%;
 }
 
 #square {
-  width: 70px;
-  height: 70px;
-  background:white;
+  width: 10%;
+  padding-bottom:10%;
 }
 
 #spin:hover{
@@ -73,4 +129,54 @@ body {
     100% { transform: translateY(-60px); }
 }
 
+
+.roster{
+  margin-top:5%;
+}
+.roster-cat{
+  margin-top:2rem;
+
+}
+.card-img-top{
+  width:230px;
+}
+
+.card-img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    cursor: pointer;
+}
+
+.card:hover .card-img {
+  opacity: .3;
+}
+
+.card:hover .card-button {
+  opacity: 1;
+}
+
+.card {
+    background-color: #131313;
+    border-color: #131313;
+}
+
+.prof-pic{
+  width:40%;
+}
+
+.bg-none{
+  background-color:transparent;
+}
+
+.border-none{
+  border:transparent;
+}
+
+.roster-name{
+  margin-top:10px;
+  color:#d5a95a;
+  font-weight:700;
 }
